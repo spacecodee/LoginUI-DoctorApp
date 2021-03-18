@@ -11,10 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 <main class="container">
+    <div class="container__left">
+        <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+             xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="m421 166c0-24.813-20.187-45-45-45s-45 20.187-45 45v75h-30v-135c0-24.813-20.187-45-45-45s-45 20.187-45 45v135h-30v-75c0-24.813-20.187-45-45-45s-45 20.187-45 45v75h-91v30h31v75c0 24.813 20.187 45 45 45s45-20.187 45-45v-75h30v135c0 24.813 20.187 45 45 45s45-20.187 45-45v-135h30v135c0 24.813 20.187 45 45 45s45-20.187 45-45v-135h30v75c0 24.813 20.187 45 45 45s45-20.187 45-45v-75h31v-30h-91zm-60 0c0-8.271 6.729-15 15-15s15 6.729 15 15v75h-30zm-120-60c0-8.271 6.729-15 15-15s15 6.729 15 15v135h-30zm-120 60c0-8.271 6.729-15 15-15s15 6.729 15 15v75h-30zm-30 180c0 8.271-6.729 15-15 15s-15-6.729-15-15v-75h30zm120 60c0 8.271-6.729 15-15 15s-15-6.729-15-15v-135h30zm120 0c0 8.271-6.729 15-15 15s-15-6.729-15-15v-135h30zm120-60c0 8.271-6.729 15-15 15s-15-6.729-15-15v-75h30z"/>
+            </g>
+        </svg>
+        <div class="container_doc">
 
+        </div>
+    </div>
     <div class="container__box">
         <div class="container__primary">
             <h1>Login</h1>
@@ -24,8 +36,9 @@
         <div class="container__login">
             <form action="">
                 <div class="container__mail">
-                    <label for="email">Email Addres</label>
-                    <input type="email" name="txtEmail" id="email">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" name="txtEmail" id="email" placeholder="example@mail.com">
+                    <i class="far fa-envelope"></i>
                 </div>
 
                 <div class="container__btns">
@@ -33,17 +46,24 @@
                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
                 </div>
             </form>
+        </div>
 
-            <div class="container__others">
-                <div class="container__or">
-                    <span></span>
-                    <span>Or</span>
-                    <span></span>
-                </div>
+        <div class="container__other-login">
+            <div class="container__or">
+                <span></span>
+                <h3>Or</h3>
+                <span></span>
+            </div>
 
-                <div class="container__other-login">
-                    
-                </div>
+            <div class="container__buttons">
+                <button type="submit">
+                    <i class="fab fa-google"></i>
+                    Continue With google
+                </button>
+                <button type="submit">
+                    <i class="fab fa-facebook-f"></i>
+                    Continue With Facebook
+                </button>
             </div>
         </div>
     </div>
